@@ -1,0 +1,20 @@
+ASHAD GUIDE LAYOUT 3.0.2 - WINDOWS / ILLUSTRATOR 2026
+
+1. Save your Illustrator work and close Illustrator.
+2. Right-click the complete ZIP and choose Extract All.
+3. Open the extracted folder and double-click Install-Windows.cmd.
+4. Read the message, type YES, and press Enter.
+   This enables unsigned CEP 12 extensions for your Windows user.
+5. Wait for Installed. Reopen Illustrator.
+6. Open Window > Extensions > Ashad Guide Layout.
+
+Do not run the installer inside the ZIP or copy files to Scripts/Plug-ins.
+
+If the panel is blank: close Illustrator, run Repair-Blank-Panel.cmd,
+wait for REPAIR SETTING VERIFIED, then reopen Illustrator.
+
+Full installation, usage, update and removal steps: README.md.
+To share: send the complete ZIP to your friends as a file attachment.
+
+Copyright (c) 2026 Ashad.
++91 8590956012 | muhammedashad2005@gmail.com
