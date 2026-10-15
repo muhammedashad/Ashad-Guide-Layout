@@ -1,12 +1,12 @@
-# Ashad Guide Layout
+# Ashad Guide Layout — Free Adobe Illustrator Margin & Grid Extension
 
-**Margins, columns and rows for Adobe Illustrator — by Ashad.**
+**Create artboard margins, column grids and row guides in Adobe Illustrator — by Ashad.**
 
 Version **3.0.2** · Windows · Illustrator 2026
 
 [Download for Windows](Ashad-Guide-Layout-Windows-v3.0.2.zip?raw=true) · [SHA-256 checksum](SHA256SUMS.txt)
 
-A dockable extension for creating consistent artboard layouts. Set independent or linked margins, divide artboards into columns and rows, and preview the result before creating guides.
+Ashad Guide Layout is a free Adobe Illustrator extension for creating artboard margins, column grids and row guides on Windows. Use its dockable panel to set independent or linked margins, adjust gutters, and preview your layout before creating guides. Designed for Illustrator 2026.
 
 ## Extension preview
 
@@ -187,6 +187,7 @@ The layout engine and panel bridge have automated checks. Fifteen host checks pr
 Email: muhammedashad2005@gmail.com · Phone: +91 8590956012
 
 Copyright © 2026 Ashad. All rights reserved except the permission to install, use and share complete unmodified copies stated in **COPYRIGHT.txt**. Adobe, Illustrator and the social-platform names and marks belong to their respective owners. This is an independent extension.
+
 
 
 
