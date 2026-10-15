@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1120" viewBox="0 0 1000 1120" role="img" aria-labelledby="title desc">
+<title id="title">Install Ashad Guide Layout on Windows</title><desc id="desc">Illustrated guide. Save and close Illustrator. Extract the full Windows ZIP. Run Install-Windows.cmd, type YES and wait for Installed. Restart Illustrator and select Window, Extensions, Ashad Guide Layout.</desc>
+<defs><style>text{font-family:Segoe UI,Arial,sans-serif;fill:#f3f3f3}.sub{fill:#bcbcbc;font-size:19px}.small{fill:#bcbcbc;font-size:17px}.label{font-size:21px}.heading{font-size:27px;font-weight:600}.mono{font-family:Consolas,monospace;font-size:20px}</style></defs>
+<rect width="1000" height="1120" rx="20" fill="#242424"/>
+<text x="40" y="49" class="small" letter-spacing="2">ASHAD / GUIDE LAYOUT</text>
+<text x="40" y="94" font-size="36" font-weight="600">Install on Windows</text>
+<text x="40" y="129" class="sub">Save your work and close Illustrator before you begin.</text>
+<rect x="30" y="160" width="940" height="263" rx="14" fill="#303030"/>
+<circle cx="67" cy="200" r="21" fill="#2686df"/><text x="61" y="208" class="label">1</text>
+<text x="104" y="209" class="heading">Extract the complete ZIP</text>
+<path d="M65 253h55l16 17h95v102H65z" fill="#dba84c"/><rect x="65" y="281" width="166" height="91" rx="7" fill="#efc567"/>
+<path d="M144 286v79" stroke="#664d22" stroke-width="8" stroke-dasharray="7 5"/>
+<text x="270" y="264" class="label">Ashad-Guide-Layout-Windows-v3.0.2.zip</text>
+<text x="270" y="299" class="sub">Right-click the downloaded ZIP in File Explorer.</text>
+<rect x="270" y="320" width="215" height="49" rx="8" fill="#414141" stroke="#6c6c6c"/><text x="297" y="351" class="label">Extract All…</text>
+<text x="270" y="399" class="small">Open the extracted folder before running the installer.</text>
+<rect x="30" y="443" width="940" height="312" rx="14" fill="#303030"/>
+<circle cx="67" cy="483" r="21" fill="#2686df"/><text x="61" y="491" class="label">2</text>
+<text x="104" y="492" class="heading">Run the Windows installer</text>
+<rect x="60" y="518" width="422" height="194" rx="9" fill="#242424" stroke="#575757"/>
+<rect x="74" y="534" width="394" height="42" rx="5" fill="#234a70"/><text x="93" y="562" class="mono">Install-Windows.cmd</text>
+<text x="93" y="610" class="mono">Install-Windows.ps1</text><text x="93" y="652" class="mono">com.ashad.guidelayout/</text>
+<text x="93" y="689" class="small">Keep these files together.</text>
+<text x="516" y="543" class="sub">Double-click Install-Windows.cmd.</text>
+<text x="516" y="576" class="sub">Read the prompt. Type YES + Enter.</text>
+<rect x="516" y="595" width="410" height="74" rx="7" fill="#191919"/><text x="536" y="623" class="mono">&gt; YES</text><text x="536" y="652" class="mono" style="fill:#88d6a0">Installed</text>
+<text x="516" y="701" class="small">YES also enables unsigned CEP 12 panels.</text><text x="516" y="730" class="small">Wait for success before opening Illustrator.</text>
+<rect x="30" y="775" width="940" height="268" rx="14" fill="#303030"/>
+<circle cx="67" cy="815" r="21" fill="#2686df"/><text x="61" y="823" class="label">3</text>
+<text x="104" y="824" class="heading">Open your extension in Illustrator</text>
+<text x="60" y="870" class="sub">Restart Illustrator, then follow this menu path:</text>
+<rect x="60" y="895" width="180" height="57" rx="7" fill="#414141" stroke="#6c6c6c"/><text x="108" y="931" class="label">Window</text>
+<text x="260" y="932" font-size="30">→</text>
+<rect x="304" y="895" width="213" height="57" rx="7" fill="#414141" stroke="#6c6c6c"/><text x="354" y="931" class="label">Extensions</text>
+<text x="537" y="932" font-size="30">→</text>
+<rect x="581" y="895" width="345" height="57" rx="7" fill="#234a70" stroke="#468ccb"/><text x="619" y="931" class="label">Ashad Guide Layout</text>
+<text x="60" y="1003" class="sub">Drag the panel tab beside your other panels to dock it.</text>
+<text x="40" y="1085" class="small">Illustrated steps • Illustrator 2026 / CEP 12 • © 2026 Ashad</text>
+</svg>

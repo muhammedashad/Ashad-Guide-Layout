@@ -8,6 +8,12 @@ Version **3.0.2** · Windows · Illustrator 2026
 
 A dockable extension for creating consistent artboard layouts. Set independent or linked margins, divide artboards into columns and rows, and preview the result before creating guides.
 
+## Extension preview
+
+![Ashad Guide Layout running inside Adobe Illustrator](extension-preview.png)
+
+*The extension running in Illustrator. Click the image to view it at full size.*
+
 ## Features
 
 - Margins with linked or independent top, left, bottom and right values.
@@ -29,6 +35,10 @@ A dockable extension for creating consistent artboard layouts. Set independent o
 This package does not include Illustrator. It contains a Windows installer, not a macOS installer or an Adobe-signed ZXP. No Node.js, separate extension manager or plugin account is needed to use it.
 
 ## Install — step by step
+
+![Illustrated Windows installation: extract the ZIP, run Install-Windows.cmd and confirm YES, then open Window → Extensions → Ashad Guide Layout](install-windows-guide.svg)
+
+*Illustrated guide; Windows and Illustrator may look slightly different on your computer.*
 
 1. Download the complete **Ashad-Guide-Layout-Windows-v3.0.2.zip** supplied by Ashad.
 2. Save your Illustrator documents, then close Illustrator normally.
@@ -119,5 +129,6 @@ The layout engine and panel bridge have automated checks. Fifteen host checks pr
 Email: muhammedashad2005@gmail.com · Phone: +91 8590956012
 
 Copyright © 2026 Ashad. All rights reserved except the permission to install, use and share complete unmodified copies stated in **COPYRIGHT.txt**. Adobe, Illustrator and the social-platform names and marks belong to their respective owners. This is an independent extension.
+
 
 
