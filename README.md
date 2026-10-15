@@ -4,7 +4,7 @@
 
 Version **3.0.2** · Windows · Illustrator 2026
 
-[Download the Windows installer ZIP](Ashad-Guide-Layout-Share-v3.0.2.zip?raw=true) · [SHA-256 checksum](SHA256SUMS.txt)
+[Download for Windows](Ashad-Guide-Layout-Windows-v3.0.2.zip?raw=true) · [SHA-256 checksum](SHA256SUMS.txt)
 
 A dockable extension for creating consistent artboard layouts. Set independent or linked margins, divide artboards into columns and rows, and preview the result before creating guides.
 
@@ -30,7 +30,7 @@ This package does not include Illustrator. It contains a Windows installer, not 
 
 ## Install — step by step
 
-1. Download the complete **Ashad-Guide-Layout-Share-v3.0.2.zip** supplied by Ashad.
+1. Download the complete **Ashad-Guide-Layout-Windows-v3.0.2.zip** supplied by Ashad.
 2. Save your Illustrator documents, then close Illustrator normally.
 3. Right-click the ZIP in File Explorer and choose **Extract All**.
 4. Open the extracted folder. You should see **Install-Windows.cmd**, **Install-Windows.ps1** and the **com.ashad.guidelayout** folder together. Do not run the installer inside the ZIP viewer.
@@ -104,7 +104,7 @@ The uninstaller requires this installer's receipt. It does not remove manual cop
 
 ## Sharing with friends
 
-Send the complete **Ashad-Guide-Layout-Share-v3.0.2.zip** as a file attachment, or share the repository's download link. Friends should extract it and follow the installation steps above. Do not send only `host.jsx` or only the extension folder; the complete ZIP includes the installer and repair instructions.
+Send the complete **Ashad-Guide-Layout-Windows-v3.0.2.zip** as a file attachment, or share the repository's download link. Friends should extract it and follow the installation steps above. Do not send only `host.jsx` or only the extension folder; the complete ZIP includes the installer and repair instructions.
 
 Keep Ashad's copyright notice and contact information with the package. The included software does not grant any licence to Adobe Illustrator itself.
 
