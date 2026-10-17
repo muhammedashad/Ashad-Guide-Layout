@@ -1,20 +1,21 @@
-ASHAD GUIDE LAYOUT 3.0.2 - WINDOWS / ILLUSTRATOR 2026
+Ashad Guide Layout 3.1.0 — Windows
 
-1. Save your Illustrator work and close Illustrator.
-2. Right-click the complete ZIP and choose Extract All.
-3. Open the extracted folder and double-click Install-Windows.cmd.
-4. Read the message, type YES, and press Enter.
-   This enables unsigned CEP 12 extensions for your Windows user.
-5. Wait for Installed. Reopen Illustrator.
-6. Open Window > Extensions > Ashad Guide Layout.
+1. Save your work and close all Illustrator versions.
+2. Extract the complete ZIP. Keep all files together.
+3. Double-click Install-Windows.cmd.
+4. Check the detected versions, read the unsigned-panel notice, type YES.
+5. Wait for Installed. Restart Illustrator.
+6. Choose Window > Extensions > Ashad Guide Layout.
 
-Do not run the installer inside the ZIP or copy files to Scripts/Plug-ins.
+Targets Illustrator 2019–2026, including 2020 and 2025.
+Older versions are compatibility targets, not verified host tests.
+Install location: %APPDATA%\Adobe\CEP\extensions\com.ashad.guidelayout
+Do not copy into the Illustrator 2026 application folder for multi-version use.
 
-If the panel is blank: close Illustrator, run Repair-Blank-Panel.cmd,
-wait for REPAIR SETTING VERIFIED, then reopen Illustrator.
+If the panel is missing or blank, close Illustrator and run
+Repair-Blank-Panel.cmd LAST, type YES, wait for verification, then restart.
+Repair needs the new extension to be installed first.
 
-Full installation, usage, update and removal steps: README.md.
-To share: send the complete ZIP to your friends as a file attachment.
-
-Copyright (c) 2026 Ashad.
-+91 8590956012 | muhammedashad2005@gmail.com
+Full illustrated instructions: README.md
+Version mapping and custom installations: COMPATIBILITY.md
+Copyright (c) 2026 Ashad. See COPYRIGHT.txt.

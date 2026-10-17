@@ -1,63 +1,57 @@
 # Ashad Guide Layout
 
-**Free margin and grid extension for Adobe Illustrator on Windows.**
+**Free margins, columns and rows for Adobe Illustrator on Windows.**
 
-Create margins, columns and rows, preview your layout, then create guides from a dockable Illustrator panel.
+Create layouts with live preview in a dockable Illustrator panel.
 
-**Version 3.0.2 · Windows · Illustrator 2026 (30.0–30.9)**
+**Version 3.1.0 · Windows · Compatibility target: Illustrator 2019–2026**
 
 ## Download
 
-**[Download the complete Windows ZIP](Ashad-Guide-Layout-Windows-v3.0.2.zip?raw=true)**
+**[Download Ashad Guide Layout for Windows — v3.1.0](https://github.com/muhammedashad/Ashad-Guide-Layout/raw/refs/heads/main/Ashad-Guide-Layout-Windows-v3.1.0.zip)**
 
-Illustrator must already be installed. This package does not include a Mac installer.
+This update removes the 2026-only restriction. It includes Illustrator **2020 (24.x)** and **2025 (29.x)** in its allowed range and detects the correct CEP setting for each installed version. Older Illustrator versions have not been tested in the actual applications; see [compatibility and testing](COMPATIBILITY.md).
 
-![Ashad Guide Layout running in Illustrator](extension-preview.png)
+![Ashad Guide Layout panel in Illustrator 2026](extension-preview.png)
 
 ## Before you start
 
-Download the ZIP above. Save your work, close Illustrator, then right-click the ZIP → **Extract All** → **Extract**. Open the extracted folder.
-
-**Choose one installation method:** use the installer in section 1, or copy the folder manually using section 2. Repair comes last, in section 3, only when needed.
+Save your work and close **all Illustrator versions**. Download the ZIP, right-click it → **Extract All** → **Extract**, then open the extracted folder. Keep all package files together.
 
 ## 1. Run Install-Windows first
 
-![Install-Windows file for automatic installation](install-windows-file.png)
+![Install-Windows file](install-windows-file.png)
 
-1. Double-click **Install-Windows.cmd** in the extracted folder. Windows may show its name as **Install-Windows** when file extensions are hidden.
-2. Keep **Install-Windows.ps1** and the **com.ashad.guidelayout** folder beside it.
+1. Double-click **Install-Windows.cmd**. Windows may show only **Install-Windows**.
+2. The installer lists the Illustrator versions it finds.
 3. Read the prompt, type **YES**, then press **Enter**.
-4. Wait for **Installed**. Restart Illustrator and open **Window → Extensions → Ashad Guide Layout**.
+4. Wait for **Installed**.
+5. Restart Illustrator. Choose **Window → Extensions → Ashad Guide Layout**.
 
-The installer copies the extension automatically to `%APPDATA%\Adobe\CEP\extensions\com.ashad.guidelayout`. It normally needs no administrator access. Typing **YES** also enables unsigned CEP 12 panels for your Windows account, including other unsigned panels.
-
-**If the panel works, installation is finished. Skip manual copying and repair.**
-
-## 2. Manual folder copy — alternative to the installer
-
-Use this only if you choose to install by copying the folder yourself. **Do not also do this after a successful installer installation.** Keep Illustrator closed while copying.
-
-### Copy the extension folder
-
-Select the **com.ashad.guidelayout** folder shown below. Press **Ctrl + C** to copy it with all its contents.
-
-![The com.ashad.guidelayout folder to copy](extension-folder.png)
-
-This is a **folder**, not a single file. Copy this folder—not the entire extracted package and not only a `.jsx` file.
-
-### Paste into Illustrator's CEP extensions folder
-
-In File Explorer, paste this exact path into the address bar and press **Enter**:
+The installer puts the panel in a shared folder for your Windows account:
 
 ```text
-C:\Program Files\Adobe\Adobe Illustrator 2026\Support Files\Required\CEP\extensions
+%APPDATA%\Adobe\CEP\extensions\com.ashad.guidelayout
 ```
 
-Press **Ctrl + V** to paste **com.ashad.guidelayout** here. Windows may request administrator permission to write into Program Files. If you have permission, approve the copy.
+This location works across the targeted Illustrator versions. It normally needs no administrator access. The installer also enables unsigned panels for the detected CEP versions; this allows other unsigned panels using those runtimes for your Windows account. Previous settings and the previous per-user panel are backed up.
 
-![Paste into the Illustrator 2026 CEP extensions folder](manual-03-paste.svg)
+**If the panel opens, you are finished. Skip sections 2 and 3.**
 
-The result should be:
+Installing another Illustrator version later? Run this installer again so it can detect that version too.
+
+## 2. Manual folder copy — optional alternative
+
+Use this only instead of the installer. Do not keep duplicate installations in different folders.
+
+![The complete extension folder to copy](extension-folder.png)
+
+1. Copy the entire **com.ashad.guidelayout** folder from the new ZIP.
+2. Press **Windows + R**, paste `%APPDATA%\Adobe\CEP\extensions`, and press **Enter**. If the folder does not exist, open `%APPDATA%\Adobe` and create `CEP`, then `extensions` inside it.
+3. Paste **com.ashad.guidelayout** inside **extensions**. Back up an existing copy outside the extensions folder before replacing it.
+4. Run the repair in section 3 to enable the matching unsigned-panel settings.
+
+Check the folder structure:
 
 ```text
 extensions
@@ -68,79 +62,60 @@ extensions
     └── other extension files
 ```
 
-Do not put a second **com.ashad.guidelayout** folder inside the first. If an older copy exists, back it up outside the extensions folder before replacing it. This path assumes Illustrator is installed in the default location shown above.
+**Upgrading from the old 2026-only instructions:** a copy in `C:\Program Files\Adobe\Adobe Illustrator 2026\Support Files\Required\CEP\extensions` is specific to that application. Close Illustrator and move only your old **com.ashad.guidelayout** folder to a backup location outside any CEP extensions folder, then use the installer above. Do not move or remove other extensions. Windows may require administrator permission for the old Program Files copy.
 
-## 3. Run Repair-Blank-Panel last — if needed
+## 3. Run Repair-Blank-Panel last — only if needed
 
-Run this only **after the extension is installed**: after manual copying, or if the installed panel opens blank. If the installer succeeded and the panel works, skip repair.
+Use repair after manual installation, or when the installed extension is missing or blank.
 
-Return to the **extracted ZIP folder**. Keep Illustrator closed, then double-click **Repair-Blank-Panel.cmd**, shown below. Run it as the Windows user who will use Illustrator.
+![Repair-Blank-Panel file](repair-blank-panel-file.png)
 
-![Repair-Blank-Panel file to run after copying the extension](repair-blank-panel-file.png)
+1. Save your work and close all Illustrator versions.
+2. In the extracted **v3.1.0** package, double-click **Repair-Blank-Panel.cmd**.
+3. Read the detected CEP versions and unsigned-panel notice. Type **YES** and press **Enter**.
+4. Wait for **REPAIR SETTING VERIFIED**.
+5. Restart Illustrator and open **Window → Extensions → Ashad Guide Layout**.
 
-Windows may show the name as **Repair-Blank-Panel** when file extensions are hidden. Keep **Repair-Blank-Panel.ps1** beside the `.cmd` file; do not run the repair from inside the ZIP.
+Keep **Compatibility.ps1** and the matching `.ps1` scripts beside the `.cmd` files. Repair checks the installed files and enables the matching settings. It cannot turn an old 3.0.2 panel into a compatible one: install the complete new ZIP first.
 
-Wait for this success message:
+## Create a layout
 
-```text
-REPAIR SETTING VERIFIED.
-```
+1. Open an Illustrator document.
+2. Choose a preset, artboards and units.
+3. Set the margins; use **Link all sides** for equal margins.
+4. Enable columns or rows and set count and gutter. Leave width or height blank for automatic sizing.
+5. Check **Preview**, then click **Create guides**.
 
-**What this does:** The panel is unsigned. The repair checks the installed files and enables unsigned CEP 12 panels for your Windows account, including other unsigned panels. It backs up the previous setting before changing it. It does not copy missing files or reinstall the extension.
+Turn Preview off before saving or closing the document. Native guides follow Illustrator's guide-colour preference. Use **Editable lines** for coloured lines that appear in exports.
 
-If you see **“Ashad Guide Layout was not found”**, check the manual folder-copy instructions in section 2 and check that `CSXS\manifest.xml` is inside the copied folder. If a file is missing, extract the complete ZIP again and copy the complete extension folder before rerunning the repair.
+## Troubleshooting
 
-### Reopen Illustrator after installation or repair
-
-Start Illustrator and choose **Window → Extensions → Ashad Guide Layout**. Drag the panel tab beside your other panels to dock it.
-
-![Open Window, Extensions, Ashad Guide Layout](manual-06-open.svg)
-
-Open an Illustrator document to use the layout controls.
-
-## Create your first layout
-
-1. Open a document with an artboard.
-2. Choose a preset, target artboard(s) and units.
-3. Set the margins. Check **Link all sides** for equal margins.
-4. Enable columns or rows if needed. Set their count and gutter; leave Width or Height blank for automatic sizing.
-5. Check **Preview**, then click **Create guides** when ready.
-
-Turn **Preview** off before saving or closing the document. Choose **Editable lines** for coloured lines that appear in exports; native guides follow Illustrator's guide-colour preference.
-
-## Need help?
-
-| Problem | What to do |
+| Problem | Fix |
 | --- | --- |
-| The panel opens but is blank | Close Illustrator, run **Repair-Blank-Panel.cmd**, wait for **REPAIR SETTING VERIFIED**, then reopen Illustrator. See section 3 above. |
-| No extension in the menu | Confirm Illustrator is **2026 / 30.0–30.9**, check the folder structure in section 2, and restart Illustrator after installation. |
-| Repair says the panel was not found | Copy the complete **com.ashad.guidelayout** folder to the exact location in section 2, then run the repair again. |
-| Repair or installation reports missing files | Extract the entire ZIP again. Keep each `.cmd` file beside its matching `.ps1` file. |
-| Guides are invisible | Choose **View → Guides → Show Guides** and check the guide layer's visibility. |
-| The layout does not fit | Reduce margins, gutters or the number of columns/rows. |
+| Shows only in Illustrator 2026 | Install **v3.1.0**, use the shared user folder above, and restart every Illustrator version. Back up old application-folder copies outside CEP folders. |
+| Installer cannot find Illustrator | See the [custom installation path instructions](COMPATIBILITY.md#custom-installation-path). |
+| Panel missing or blank after installation | Close Illustrator, run the new repair script, then restart. If it persists, send Ashad the exact Illustrator version and error. |
+| Missing package files | Extract the complete ZIP. Do not run scripts inside the ZIP or copy only one script. |
+| Guides invisible | Choose **View → Guides → Show Guides** and check layer visibility. |
+| Layout does not fit | Reduce margins, gutters or the number of columns/rows. |
 
-If your work computer blocks installation, contact your administrator. If a problem remains, send Ashad your Illustrator version and the exact error message. Repairing the unsigned-panel setting will not fix every possible cause of a blank panel.
+An organisation may block scripts or unsigned extensions. Contact its administrator if installation is blocked. Repair cannot fix every cause of a blank panel.
 
 ## Update or uninstall
 
-**Folder-copy installation:** Close Illustrator. To update, back up the existing **com.ashad.guidelayout** folder outside the extensions folder, then replace it with the new complete folder. To uninstall, remove only **com.ashad.guidelayout** from the location in section 2. Removing the folder does not restore the unsigned-panel setting. Illustrator updates may remove manually copied extensions.
+**Update:** close Illustrator and run the new **Install-Windows.cmd**. It backs up the previous per-user panel.
 
-**Installer installation:** Close Illustrator and run the new package's **Install-Windows.cmd** to update. To uninstall, run **Uninstall-Windows.cmd**, type **YES**, then press **Enter** to keep the unsigned-panel setting or type **RESTORE** to restore the recorded previous setting. Restoration may affect other unsigned panels. The uninstaller does not remove manual Program Files copies.
-
-Avoid keeping copies in both locations: Illustrator may load a different copy from the one you updated.
+**Uninstall:** close Illustrator, run **Uninstall-Windows.cmd**, and type **YES**. Press **Enter** to keep CEP settings for other extensions, or type **RESTORE** to restore saved values. Restoring them may affect other unsigned panels. The uninstaller removes only its per-user installation; manual application-folder copies remain.
 
 ## Share and contact
 
-Share this GitHub page or the complete **Ashad-Guide-Layout-Windows-v3.0.2.zip**. Keep the copyright notice with the package.
+Share this page or the complete **Ashad-Guide-Layout-Windows-v3.1.0.zip** with your friends.
 
 [WhatsApp](https://wa.me/918590956012) · [Instagram](https://www.instagram.com/as.hxd/) · [Behance](https://www.behance.net/muhammedashad) · [LinkedIn](https://www.linkedin.com/in/muhammed-ashad-79a329388) · [Pinterest](https://in.pinterest.com/muhammedashad2005/)
 
-Email: muhammedashad2005@gmail.com · Phone: +91 8590956012
++91 8590956012 · muhammedashad2005@gmail.com
 
-[Testing scope](TEST-REPORT.md) · [Download checksum](SHA256SUMS.txt) · [Use and sharing permission](COPYRIGHT.txt)
+[Compatibility](COMPATIBILITY.md) · [Test report](TEST-REPORT.md) · [Download checksum](https://github.com/muhammedashad/Ashad-Guide-Layout/blob/main/SHA256SUMS.txt) · [Use and sharing permission](COPYRIGHT.txt)
 
-Native host checks were run in Illustrator 30.6.0. A fresh installation on another computer has not been verified.
-
-© 2026 Ashad. See the included copyright notice for permission to install, use and share complete unmodified copies. This is an independent extension; Adobe and Illustrator belong to their respective owners.
-
+© 2026 Ashad. Complete, unmodified copies may be installed, used and shared with the included notice. This is an independent extension; Adobe and Illustrator belong to their respective owners.
 
