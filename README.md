@@ -85,12 +85,11 @@ Open an Illustrator document to use the layout controls.
 
 ## Alternative: use the Windows installer
 
-<details>
-<summary>Click here if you prefer automatic installation instead of copying the folder</summary>
-
 Use this as an alternative to the folder-copy steps above. If the panel already works, you do not need to install it again.
 
 ![Install-Windows file for automatic installation](install-windows-file.png)
+
+**This picture shows Install-Windows.cmd.** Windows hides the `.cmd` ending when file extensions are turned off. Double-click this file for automatic installation. **Repair-Blank-Panel.cmd** is a different file: use it after manual copying, or to repair the unsigned-panel setting.
 
 1. Save your work and close Illustrator.
 2. Extract the complete ZIP and open the extracted folder.
@@ -101,8 +100,6 @@ Use this as an alternative to the folder-copy steps above. If the panel already 
 The installer copies the panel to `%APPDATA%\Adobe\CEP\extensions\com.ashad.guidelayout`. It normally needs no administrator access. You do not also need to copy the folder into Program Files or run the repair after a successful installation.
 
 [View all installer steps as a picture](install-windows-guide.svg)
-
-</details>
 
 ## Create your first layout
 
@@ -148,3 +145,4 @@ Email: muhammedashad2005@gmail.com · Phone: +91 8590956012
 Native host checks were run in Illustrator 30.6.0. A fresh installation on another computer has not been verified.
 
 © 2026 Ashad. See the included copyright notice for permission to install, use and share complete unmodified copies. This is an independent extension; Adobe and Illustrator belong to their respective owners.
+
