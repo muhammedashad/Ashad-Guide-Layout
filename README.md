@@ -14,17 +14,30 @@ Illustrator must already be installed. This package does not include a Mac insta
 
 ![Ashad Guide Layout running in Illustrator](extension-preview.png)
 
-## Install by copying the folder
+## Before you start
 
-**Follow steps 1–5 below.** If you already installed the panel with **Install-Windows.cmd**, skip the folder-copy steps. Use one installation method only.
+Download the ZIP above. Save your work, close Illustrator, then right-click the ZIP → **Extract All** → **Extract**. Open the extracted folder.
 
-### 1. Close Illustrator and extract the ZIP
+**Choose one installation method:** use the installer in section 1, or copy the folder manually using section 2. Repair comes last, in section 3, only when needed.
 
-Save your work and close Illustrator. Right-click the downloaded ZIP → **Extract All** → **Extract**. Open the extracted package folder.
+## 1. Run Install-Windows first
 
-![Extract the complete Windows ZIP before installing](manual-01-extract.svg)
+![Install-Windows file for automatic installation](install-windows-file.png)
 
-### 2. Copy com.ashad.guidelayout
+1. Double-click **Install-Windows.cmd** in the extracted folder. Windows may show its name as **Install-Windows** when file extensions are hidden.
+2. Keep **Install-Windows.ps1** and the **com.ashad.guidelayout** folder beside it.
+3. Read the prompt, type **YES**, then press **Enter**.
+4. Wait for **Installed**. Restart Illustrator and open **Window → Extensions → Ashad Guide Layout**.
+
+The installer copies the extension automatically to `%APPDATA%\Adobe\CEP\extensions\com.ashad.guidelayout`. It normally needs no administrator access. Typing **YES** also enables unsigned CEP 12 panels for your Windows account, including other unsigned panels.
+
+**If the panel works, installation is finished. Skip manual copying and repair.**
+
+## 2. Manual folder copy — alternative to the installer
+
+Use this only if you choose to install by copying the folder yourself. **Do not also do this after a successful installer installation.** Keep Illustrator closed while copying.
+
+### Copy the extension folder
 
 Select the **com.ashad.guidelayout** folder shown below. Press **Ctrl + C** to copy it with all its contents.
 
@@ -32,7 +45,7 @@ Select the **com.ashad.guidelayout** folder shown below. Press **Ctrl + C** to c
 
 This is a **folder**, not a single file. Copy this folder—not the entire extracted package and not only a `.jsx` file.
 
-### 3. Paste into Illustrator's CEP extensions folder
+### Paste into Illustrator's CEP extensions folder
 
 In File Explorer, paste this exact path into the address bar and press **Enter**:
 
@@ -57,7 +70,9 @@ extensions
 
 Do not put a second **com.ashad.guidelayout** folder inside the first. If an older copy exists, back it up outside the extensions folder before replacing it. This path assumes Illustrator is installed in the default location shown above.
 
-### 4. Run Repair-Blank-Panel
+## 3. Run Repair-Blank-Panel last — if needed
+
+Run this only **after the extension is installed**: after manual copying, or if the installed panel opens blank. If the installer succeeded and the panel works, skip repair.
 
 Return to the **extracted ZIP folder**. Keep Illustrator closed, then double-click **Repair-Blank-Panel.cmd**, shown below. Run it as the Windows user who will use Illustrator.
 
@@ -73,33 +88,15 @@ REPAIR SETTING VERIFIED.
 
 **What this does:** The panel is unsigned. The repair checks the installed files and enables unsigned CEP 12 panels for your Windows account, including other unsigned panels. It backs up the previous setting before changing it. It does not copy missing files or reinstall the extension.
 
-If you see **“Ashad Guide Layout was not found”**, repeat steps 2–3 and check that `CSXS\manifest.xml` is inside the copied folder. If a file is missing, extract the complete ZIP again and copy the complete extension folder before rerunning the repair.
+If you see **“Ashad Guide Layout was not found”**, check the manual folder-copy instructions in section 2 and check that `CSXS\manifest.xml` is inside the copied folder. If a file is missing, extract the complete ZIP again and copy the complete extension folder before rerunning the repair.
 
-### 5. Open the extension
+### Reopen Illustrator after installation or repair
 
 Start Illustrator and choose **Window → Extensions → Ashad Guide Layout**. Drag the panel tab beside your other panels to dock it.
 
 ![Open Window, Extensions, Ashad Guide Layout](manual-06-open.svg)
 
 Open an Illustrator document to use the layout controls.
-
-## Alternative: use the Windows installer
-
-Use this as an alternative to the folder-copy steps above. If the panel already works, you do not need to install it again.
-
-![Install-Windows file for automatic installation](install-windows-file.png)
-
-**This picture shows Install-Windows.cmd.** Windows hides the `.cmd` ending when file extensions are turned off. Double-click this file for automatic installation. **Repair-Blank-Panel.cmd** is a different file: use it after manual copying, or to repair the unsigned-panel setting.
-
-1. Save your work and close Illustrator.
-2. Extract the complete ZIP and open the extracted folder.
-3. Double-click **Install-Windows.cmd**. Windows may display it as **Install-Windows**. Keep **Install-Windows.ps1** and **com.ashad.guidelayout** beside it.
-4. Read the message, type **YES**, and press **Enter**. This installs the panel and enables unsigned CEP 12 panels for your Windows account.
-5. Wait for **Installed**, then reopen Illustrator → **Window → Extensions → Ashad Guide Layout**.
-
-The installer copies the panel to `%APPDATA%\Adobe\CEP\extensions\com.ashad.guidelayout`. It normally needs no administrator access. You do not also need to copy the folder into Program Files or run the repair after a successful installation.
-
-[View all installer steps as a picture](install-windows-guide.svg)
 
 ## Create your first layout
 
@@ -115,9 +112,9 @@ Turn **Preview** off before saving or closing the document. Choose **Editable li
 
 | Problem | What to do |
 | --- | --- |
-| The panel opens but is blank | Close Illustrator, run **Repair-Blank-Panel.cmd**, wait for **REPAIR SETTING VERIFIED**, then reopen Illustrator. See step 4 above. |
-| No extension in the menu | Confirm Illustrator is **2026 / 30.0–30.9**, check the folder structure in step 3, and restart Illustrator after installation. |
-| Repair says the panel was not found | Copy the complete **com.ashad.guidelayout** folder to the exact location in step 3, then run the repair again. |
+| The panel opens but is blank | Close Illustrator, run **Repair-Blank-Panel.cmd**, wait for **REPAIR SETTING VERIFIED**, then reopen Illustrator. See section 3 above. |
+| No extension in the menu | Confirm Illustrator is **2026 / 30.0–30.9**, check the folder structure in section 2, and restart Illustrator after installation. |
+| Repair says the panel was not found | Copy the complete **com.ashad.guidelayout** folder to the exact location in section 2, then run the repair again. |
 | Repair or installation reports missing files | Extract the entire ZIP again. Keep each `.cmd` file beside its matching `.ps1` file. |
 | Guides are invisible | Choose **View → Guides → Show Guides** and check the guide layer's visibility. |
 | The layout does not fit | Reduce margins, gutters or the number of columns/rows. |
@@ -126,7 +123,7 @@ If your work computer blocks installation, contact your administrator. If a prob
 
 ## Update or uninstall
 
-**Folder-copy installation:** Close Illustrator. To update, back up the existing **com.ashad.guidelayout** folder outside the extensions folder, then replace it with the new complete folder. To uninstall, remove only **com.ashad.guidelayout** from the location in step 3. Removing the folder does not restore the unsigned-panel setting. Illustrator updates may remove manually copied extensions.
+**Folder-copy installation:** Close Illustrator. To update, back up the existing **com.ashad.guidelayout** folder outside the extensions folder, then replace it with the new complete folder. To uninstall, remove only **com.ashad.guidelayout** from the location in section 2. Removing the folder does not restore the unsigned-panel setting. Illustrator updates may remove manually copied extensions.
 
 **Installer installation:** Close Illustrator and run the new package's **Install-Windows.cmd** to update. To uninstall, run **Uninstall-Windows.cmd**, type **YES**, then press **Enter** to keep the unsigned-panel setting or type **RESTORE** to restore the recorded previous setting. Restoration may affect other unsigned panels. The uninstaller does not remove manual Program Files copies.
 
@@ -145,4 +142,5 @@ Email: muhammedashad2005@gmail.com · Phone: +91 8590956012
 Native host checks were run in Illustrator 30.6.0. A fresh installation on another computer has not been verified.
 
 © 2026 Ashad. See the included copyright notice for permission to install, use and share complete unmodified copies. This is an independent extension; Adobe and Illustrator belong to their respective owners.
+
 
