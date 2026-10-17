@@ -16,17 +16,18 @@ Download this ZIP, then follow the steps below. Illustrator must already be inst
 
 ## Install — recommended method
 
-1. **Close Illustrator.** Save your work first.
-2. **Extract the ZIP.** Right-click the downloaded file → **Extract All** → **Extract**.
-3. **Open the extracted folder.** Double-click **Install-Windows.cmd**. Keep the other files and folders beside it.
-4. **Confirm installation.** Read the message, type **YES**, then press **Enter**. Wait for **Installed**.
-5. **Open Illustrator.** Choose **Window → Extensions → Ashad Guide Layout**.
-
-You can drag the panel tab beside your other Illustrator panels to dock it.
+1. **Download** the Windows ZIP using the link above.
+2. **Save and close Illustrator.**
+3. **Extract the ZIP:** right-click → **Extract All** → **Extract**.
+4. **Run Install-Windows.cmd** from the extracted folder. Keep the other files beside it.
+5. **Confirm:** read the prompt, type **YES**, then press **Enter**.
+6. **Wait for Installed.** If you see an error, use **Need help?** below.
+7. **Open Illustrator:** choose **Window → Extensions → Ashad Guide Layout**.
+8. **Dock and use the panel:** drag its tab beside your other panels, open a document and choose your layout settings.
 
 **Installation setting:** This is an unsigned extension. Typing **YES** also enables unsigned CEP 12 panels for your Windows account, including other unsigned panels. The installer records the previous setting for optional restoration when uninstalling. Administrator access is normally unnecessary.
 
-![Illustrated Windows installation: extract, run the installer, then open the extension](install-windows-guide.svg)
+![Complete eight-step Windows guide: download, close Illustrator, extract, run installer, confirm YES, wait for Installed, open the extension and dock the panel](install-windows-guide.svg)
 
 *Installation illustration; your Windows interface may look different.*
 
@@ -75,3 +76,4 @@ Email: muhammedashad2005@gmail.com · Phone: +91 8590956012
 Native host checks were run in Illustrator 30.6.0. A fresh installation on another computer has not been verified.
 
 © 2026 Ashad. See the included copyright notice for permission to install, use and share complete unmodified copies. This is an independent extension; Adobe and Illustrator belong to their respective owners.
+
